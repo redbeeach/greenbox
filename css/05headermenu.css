@@ -76,7 +76,7 @@ header nav ul li a.active {
 
 header .logo a {
     width: 171px;
-    height: 56px;
+    height: 49px;
     background: url(../imge/GREEN%20%20%20%20%20%20%20BOX.png) no-repeat;
     background-size: contain;
     display: block;
@@ -85,7 +85,7 @@ header .logo a {
 
 header.sticky .logo a {
     background-image: url(../imge/GREEN%20%20%20%20%20%20%20BOX.png);
-    background-size: 40%;
+    background-size: 50%;
 }
 
 
@@ -103,6 +103,7 @@ header.sticky .logo a {
 
 .slider {
     position: relative;
+    min-width: 1180px;
 }
 
 .slider-list li {
@@ -267,7 +268,7 @@ header.sticky .logo a {
 }
 
 .main_package {
-     width: 60%;
+    width: 60%;
     min-width: 1180px;
     margin: 0 auto;
     position: relative;
@@ -276,7 +277,7 @@ header.sticky .logo a {
 }
 
 .main_package .leftwing {
-    width: 40%;
+    width: 42%;
     float: left;
 }
 
@@ -300,11 +301,11 @@ header.sticky .logo a {
 .main_package .leftwing .button .btn {
     position: relative;
     color: #000;
-    border: 2px solid #008264;
+    border: 3px solid #008264;
     border-radius: 10px;
     font-weight: 600;
     text-align: center;
-    padding: 20px;
+    padding: 22px;
     transition: 800ms ease all;
 }
 
@@ -313,7 +314,7 @@ header.sticky .logo a {
     content: '';
     position: absolute;
     top: 0;
-    right: 0;
+    right: 1px;
     height: 2px;
     width: 0;
     background: #008264;
@@ -323,7 +324,7 @@ header.sticky .logo a {
 .btn:after {
     right: inherit;
     top: 61px;
-    left: 0;
+    left: 1px;
     bottom: 0;
 }
 
@@ -334,7 +335,7 @@ header.sticky .logo a {
 
 .btn:hover:before,
 .btn:hover:after {
-    width: 100%;
+    width: 99%;
     transition: 800ms ease all;
 }
 
@@ -383,7 +384,7 @@ header.sticky .logo a {
 }
 
 .main_package .rightwing {
-    float: right;
+    display: inline-block;
     width: 58%;
     position: relative;
 }
@@ -392,7 +393,7 @@ header.sticky .logo a {
     width: 250px;
     height: 300px;
     background: #e9e9e9;
-    float: left;
+    display: inline-block;
     margin: 10px;
     border-radius: 20px;
     position: relative;
@@ -433,176 +434,156 @@ header.sticky .logo a {
 }
 
 /*3가지 특징*/
-
-.se2 {
-    background: #008264;
-    background-size: cover;
+.po3 {
     width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    background: #008264;
+    padding-top: 110px;
+    padding-bottom: 100px;
 }
 
-.opcity {
-    background: rgba(0, 0, 0, .1);
-    height: 100%;
-}
-
-.s2 {
-    width: 60%;
-    min-width: 1180px;
+.q3po {
+    max-width: 1400px;
     margin: 0 auto;
     position: relative;
+    padding: 50px 0;
 }
 
-.se2 h2 {
-    color: #fff;
-    font-size: 50px;
+.q3po > .h_title {
     text-align: center;
-    font-weight: 600;
-    text-shadow: 1px 1px 3px #000;
-    padding: 81px 60px;
+    font-size: 1.7em;
     position: relative;
-    font-family: 'Maplestory Bold';
-    letter-spacing: 5px;
-    padding-top: 132px;
 }
-.bx2bx{
-    width: 100%;
-}
-.bxbxbx{
-    width: 100%;
-    position: relative;
-    margin: 0 auto;text-align: center;
-}
-.bx2bx .bx2_1 {
-    border-radius: 30px;
-    width: 100%;
-/*    height: 100%;*/
-    position: relative;
-    overflow: hidden;
-    background: #fff;
-}
-.bx2bx .bx2:nth-child(2){
-    padding: 0 15px 0 15px;
-}
-.se2 h2:after {
+
+.q3po > .h_title h3:after {
     content: "";
     display: block;
-    width: 200px;
+    width: 260px;
     height: 3px;
     background: #fff;
     position: absolute;
-    top: 58%;
-    left: 20%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    top: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.se2 h2:before {
+.q3po > .h_title h3:before {
     content: "";
     display: block;
-    width: 200px;
+    width: 260px;
     height: 3px;
     background: #fff;
     position: absolute;
-    top: 58%;
-    right: 6%;
-    transform: translate(-50%, -50%);
+    right: 0;
+    top: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.se2 .bx2 {
-    width: 30%;
-    display: inline-block;
-/*    padding: 23px;*/
-    position: relative;
-    overflow: hidden;
-}
-.se2 .bx2 .bx2_1 img{
-    width: 79%;
-}
-.se2 .bx2 .bx2_1 h4,
-pre {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-    font-weight: 600;
+.q3po > .h_title > h3 {
+    font-size: 1.8em;
+    margin-top: 30px;
+    font-weight: 800;
     color: #fff;
-    text-align: center;
-    line-height: 45px;
+}
+
+.q3po > .h_title > p {
+    font-size: 0.8em;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.q3po > article {
+    width: 32.3333%;
+    margin: 80px 0.5%;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.q3po > article img {
+    width: 100%;
+    transition: all 0.5s ease 0s;
     opacity: 1;
-    /*    font-family: 'hans punch';*/
+}
+
+.q3po > article > a > span {
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 38%;
+    text-align: center;
+    color: #f9f9f9;
+    padding: 20px;
+    font-size: 34px;
+    font-weight: bold;
+    z-index: 100;
+    border-top: 1px solid #f9f9f9;
+    border-bottom: 1px solid #f9f9f9;
+    width: 53%;
     text-shadow: 1px 1px 4px #000;
-    transition: opacity .8s;
-    letter-spacing: 1px;
 }
 
-.bx2 .bx1_hover {
-    position: absolute;
-    height: 100%;
+article > a > .a_hover {
     opacity: 0;
-    background: rgba(0, 0, 0, .5);
-    text-align: center;
-    z-index: 99;
-    transition: opacity .5s;
 }
 
-.bx2 .bx1_hover p {
-    text-align: center;
-    width: 70%;
-    padding: 145px 63px;
-    color: #fff;
-    font-size: 19px;
-    line-height: 34px;
-    opacity: 1;
-    letter-spacing: 0.5px;
-}
-
-.bx2 .bx1_hover p:after {
-    content: "";
+article > a > .a_hover > span {
     display: block;
-    width: 70%;
-    height: 3px;
-
-    background: #fff;
-    margin: 54px 0 0 45px;
-}
-
-.bx2 .bx1_hover p:before {
-    content: "";
-    display: block;
-    width: 50%;
-    height: 3px;
-    left: 25%;
-    background: #fff;
     position: absolute;
-    top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 11%;
+    text-align: center;
+    color: #f9f9f9;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 100;
+    
 }
 
-.bx2 .bx1_hover span {
+article > a > .a_hover > p {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 75%;
+    top: 38%;
+    line-height: 34px;
+    text-align: center;
+    font-weight: 600;
+font-size: 21px;
+    color: #fff;
+    z-index: 100;
+    transition: all 0.7s;
+}
+
+.a_hover > p > span {
     color: #b1fdb4;
 }
 
-.bx2:hover .bx1_hover {
+article:hover .a_hover {
     opacity: 1;
-    transition: opacity .5s;
-
 }
 
-.bx2:hover h4 {
+article:hover a > span {
     opacity: 0;
-    transition: opacity .8s;
-
 }
 
-.bx2_1:hover img {
+article:hover img {
     transform: scale(1.1);
-    transition: all .5s
+    transition: all .7;
+    opacity: 0.3;
 }
-
-.bx2_1:hover img1 {
-    transform: scale(1.1);
-    transition: all .5s
-}
-
 
 /*------온라인샵------*/
 .shopin {
@@ -693,7 +674,6 @@ pre {
 .shopin .shopbx_1 {
     position: relative;
     width: 100%;
-    height: 200px;
     border-radius: 20px;
     background: #008264;
     overflow: hidden;
@@ -702,7 +682,6 @@ pre {
 .shopin .shopbx_2 {
     position: relative;
     width: 100%;
-    height: 200px;
     border-radius: 20px;
     background: #f8d8dd;
     overflow: hidden;
@@ -716,8 +695,79 @@ pre {
     display: inline-block;
 }
 
+.shop_imgbox {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sectioncshop {
+    /*    width: 1180px;*/
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sectioncshopimg01 {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.sectioncshopimg01 > a,
+.sectioncshopimg02 > a {
+    display: inline-block;
+    width: 24.5%;
+    overflow: hidden;
+    /*    margin-right: 5px*/
+}
+
+.sectioncshopimg01 > a:last-child {
+    margin: 0;
+}
+
+.sectioncshopimg01 > a > img,
+.sectioncshopimg02 > a > img {
+    width: 100%;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.cshoptext01 {
+    width: 100%;
+    height: 80px;
+    color: #fff;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 0 0 10px 10px;
+    transform: translateY(100px);
+    transition: all 0.3s ease-in-out;
+    margin-top: -80px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cshoptext01 > p:first-child {
+    padding-top: 20px;
+}
+
+.cshoptext01 > p {
+    line-height: 20px;
+}
+
+.shop_imgbx {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.sectioncshopimg01 > a:hover .cshoptext01 {
+    transform: translateY(0px);
+}
+
 .shopin .shop_f2 {
-    padding: 65px;
+padding: 65px 65px 0 0px;
     float: right;
     color: #fff;
     line-height: 34px;
@@ -736,7 +786,12 @@ pre {
 .shopin .shop_f2 p {
     font-size: 20px;
 }
-
+.shopbx_2 img{
+        width: 19%;
+    margin: 0 auto;
+    text-align: center;
+    display: inherit;
+}
 .shopin .shopbx_1 a {
     padding: 20px 44px;
     background: #fff;
@@ -757,7 +812,7 @@ pre {
     color: #000;
     float: left;
     font-weight: 600;
-    margin: 71px 98px;
+margin: 71px 0 63px 98px;
     box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, .5);
     position: relative;
     z-index: 99;
@@ -830,15 +885,15 @@ pre {
 
 .shopin .shop_japumbx {
     width: 100%;
-/*    height: 51.8%;*/
+    /*    height: 51.8%;*/
     position: relative;
-        text-align: center;
+    text-align: center;
 }
 
 .shopin .shop_japumbx .japum1 {
     width: 23%;
     height: 350px;
-display: inline-block;
+    display: inline-block;
     position: relative;
     border-radius: 20px;
     border: 2px solid #eee;
@@ -854,7 +909,7 @@ display: inline-block;
 
 }
 
-.shopin .shop_japumbx .japum1:hover img {
+.sectioncshop > .sectioncshopimg01 > a:hover img {
     transform: scale(1.2);
     transition: all .5s;
 }
@@ -901,7 +956,7 @@ display: inline-block;
 
 .snsbx > h1 {
     font-family: 'Maplestory Bold';
-    font-size: 40px;
+    font-size: 2vw;
     color: #fff;
     padding: 60px;
     text-shadow: 1px 1px 4px #000;
@@ -920,53 +975,56 @@ display: inline-block;
 }
 
 .snsbx .snsbx_1 .snshoverbx {
-    background: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, .6);
     width: 100%;
-    height: 50%;
+    height: 100%;
+    margin-top: -170px;
+    /*    white-space: nowrap;*/
     position: absolute;
-        bottom: -124px;
+    transform: translateY(100px);
     opacity: .5;
-    transition: bottom 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 
 .snshoverbx img {
     border-radius: 100%;
     background: #fff;
     margin: 12px;
-    width: 56px;
-        height: 55px;
+    width: 13%;
 }
 
-.snshoverbx h4 {
-    font-size: 25px;
+.snshoverbx > span {
+    font-size: 1vw;
     color: #fff;
     line-height: 3;
     display: inline-block;
 }
 
 .snshoverbx p {
-    font-size: 20px;
+    font-size: .7vw;
     color: #fff;
-    padding: 25px 54px;
+    letter-spacing: 0.1vw;
+    line-height: 1vw;
     text-align: center;
+    padding: 20px;
 }
 
 .snsbx .snsbx_1:hover .snshoverbx {
     opacity: 1;
-    bottom: 0px;
-   transition: bottom 0.7s ease-in-out;
+    transform: translateY(0px);
+    transition: all 0.7s ease-in-out;
 }
 
 .snsbx .snsbx_1:hover span {
-        color: #fff;
+    color: #fff;
 }
 
-.snsbx_1 span {
+.snsbx_1 > span {
     position: absolute;
     right: 17px;
     top: 10px;
-    font-size: 37px;
-        color: rgba(255, 255, 255, .4);
+    font-size: 2vw;
+    color: rgba(255, 255, 255, .4);
 }
 
 /*100종---------------*/
@@ -1339,36 +1397,34 @@ footer p {
 
 /* RESPONSIVE */
 @media screen and (max-width:1400px) {
-    #header{
-        min-width: 100%;
+    #header {
+        min-width: 1180px;
     }
-    .content,
-    section,
-    .shopin
-    {
-        min-width: auto;
-        width: 100%;
-        height: auto;
-    }
-    .main_package{
+header .logo {
+    padding: 0px 0 0 50px;
+}
+    .main_package {
         padding-bottom: 150px;
     }
-.s2 {
-     min-width: auto; 
-    width: 100%;
+
+    .s2 {
+        min-width: auto;
+        width: 100%;
     }
+
     .container {
         width: 100%;
         margin: 0 auto;
         min-width: auto;
     }
+
     .shopin .shopimgbx,
     .shopimgbx1 {
         display: none;
     }
 
     .shopin .shopbx_1 a {
-        margin: 71px 17px;
+margin: 67px 17px;
     }
 
     .shopin .shopbx_2 a {
@@ -1376,47 +1432,148 @@ footer p {
     }
 
     .shopin .shop_japumbx .japum1 {
-           width: 47%;
+        width: 47%;
     }
-.bx2bx {
-    padding-bottom: 100px;
-}
-    .sns .snsbx{
+
+    .bx2bx {
+        padding-bottom: 100px;
+    }
+
+    .sns .snsbx {
         min-width: auto;
     }
+
     .snsbx .snsbx_1 {
         height: auto;
     }
-    .snsbx .snsbx_1 .snshoverbx{
+
+    /*
+    .snsbx .snsbx_1 .snshoverbx {
         display: none;
     }
+*/
+
     .se2 .bx2 {
-    width: 29%;
+        width: 29%;
         padding: 0;
     }
-        .bx2 .bx1_hover p:before,
+
+    .bx2 .bx1_hover p:before,
     .bx2 .bx1_hover p:after,
     .se2 h2:before,
-    .se2 h2:after
-    {
-display: none;
+    .se2 h2:after {
+        display: none;
+    }
+
+    .snsbx .snsbx_1 .snshoverbx {
+        margin-top: -148px;
+    }
+
+    .snsbx .snsbx_1:hover .snshoverbx {
+        transform: translateY(38px);
+    }
 }
-}
-@media screen and (max-width:960px){
-    .main_package
-    {
+
+@media screen and (max-width:960px) {
+
+    .content,
+    section,
+    .shopin {
+        min-width: auto;
+        width: 100%;
+        /*        height: auto;*/
+    }
+
+    .q3po > article > a > span {
+        top: 34%;
+        text-align: center;
+        color: #f9f9f9;
+        font-size: 3vw;
+        font-weight: bold;
+        z-index: 100;
+        border-top: 1px solid #f9f9f9;
+        border-bottom: 1px solid #f9f9f9;
+        width: 69%;
+    }
+
+    article > a > .a_hover > span {
+        top: 11%;
+        text-align: center;
+        color: #f9f9f9;
+        font-size: 2vw;
+        font-weight: bold;
+        z-index: 100;
+    }
+
+    article > a > .a_hover > p {
+        width: 61%;
+top: 40%;
+        font-size: 1.5vw;
+        line-height: 2vw;
+        text-align: center;
+        color: #f9f9f9;
+        z-index: 100;
+    }
+
+    .sectioncshop {
+        width: 95%;
+    }
+
+    .sectioncimgtext01 > p:first-child,
+    .sectioncimgtext02 > p:first-child {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: bold;
+    }
+
+    .sectioncimgtext01 > p:last-child,
+    .sectioncimgtext02 > p:last-child {
+        font-size: 16px;
+        padding-top: 5px;
+    }
+
+    .sectioncshopimg01 > a,
+    .sectioncshopimg02 > a {
+        width: 23.6%;
+        margin-right: 1%;
+    }
+
+    .cshoptext01 {
+        height: 100%;
+        font-size: 12px;
+        margin: 0;
+        transform: translateY(0px);
+        background-color: #fff;
+        color: #000;
+        transition: none;
+    }
+
+    .cshoptext01 > p {
+        line-height: 17px;
+    }
+
+    .cshoptext01 > p:first-child {
+        padding-top: 3px;
+    }
+
+    .sectioncshopimg01 > a:hover .cshoptext01 {
+        transform: none;
+    }
+
+    .main_package {
         min-width: auto;
         width: 100%;
         height: auto;
     }
-        .main_package .rightwing {
+
+    .main_package .rightwing {
         float: none;
         width: 100%;
         position: relative;
     }
 
     .main_package .rightwing .bx1 {
-    width: 43%;
+        width: 43%;
     }
 
     .main_package .leftwing {
@@ -1427,15 +1584,45 @@ display: none;
     .main_package .leftwing .fontbx {
         margin-top: 53px;
     }
+
     .bx2 .bx1_hover p {
-    padding: 34px 16px;width: 90%;
+        padding: 34px 16px;
+        width: 90%;
+    }
+
+    .se2 .bx2 .bx2_1 h4,
+    pre {
+        font-size: 19px;
+    }
+
+    .snsbx .snsbx_1 .snshoverbx {
+        margin-top: -135px;
+    }
+
+    .snsbx .snsbx_1 .snshoverbx {
+
+        height: 100%;
+    }
+    .po3 {
+     padding-bottom:0; 
+}
+    .q3po > .h_title h3:before,
+    .q3po > .h_title h3:after{
+        display: none;
+    }
+    .shopbx_2 img {
+display: none;
+}
 }
 
-    .se2 .bx2 .bx2_1 h4, pre {
-    font-size: 19px;
-    }
-}
 @media screen and (max-width:768px) {
+    .slider {
+     min-width:auto; 
+}
+    .sns {
+        width: 100%;
+    }
+
     .container {
         width: 100%;
         padding: 0 15px;
@@ -1603,18 +1790,53 @@ display: none;
         margin-left: 0;
         left: 95%;
     }
-.sns .snsbx {
-    width: 100%;
+
+    .sns .snsbx {
+        width: 100%;
     }
-    .bx2 .bx1_hover{
+
+    .bx2 .bx1_hover {
         display: none;
     }
+
     .shopin .shop_japumbx .japum1 {
-margin: 0;
-}
+        margin: 0;
+    }
+
+    .shopin .shop_f h2,
+    .shopin .shop_f2 h2 {
+        font-size: 35px;
+    }
+
+    .shopin .shop_f h2,
+    .shopin .shop_f2 h2 {
+        font-size: 18px;
+    }
+
+    .shopin .shop_f p,
+    .shopin .shop_f2 p {
+        font-size: 12px;
+    }
+
+    .shopin .shop_f,
+    .shopin .shop_f2 {
+        padding: 15px;
+    }
+
+    .shopin .shopbx_1 a,
+    .shopin .shopbx_2 a {
+        margin: 24px 13px;
+        padding: 17px 13px;
+    }
+
+    .se2 h2 {
+        color: #fff;
+        font-size: 29px;
+    }
+
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:500px) {
 
     .service_item {
         width: 100%;
@@ -1642,7 +1864,7 @@ margin: 0;
     }
 
     .slider-list li .contents h3 {
-        font-size: 6vw;
+        font-size: 3vw;
     }
 
     .slider-list li .contents h2 {
@@ -1677,5 +1899,44 @@ margin: 0;
         text-align: center;
     }
 
+    .main_package .rightwing {
+        margin-left: 15px;
+    }
+.po3 {
+    width: 100%;
+    padding-top: 21px;
+    }
+    .q3po > .h_title h3:before,
+    .q3po > .h_title h3:after {
+        display: none;
+    }
 
+    .q3po > .h_title > h3 {
+        font-size: 1.2em;
+    }
+
+    .q3po > .h_title > p {
+        font-size: 0.6em;
+    }
+.q3po > article {
+    width: 50%;
+    margin: 25px 0 0px 25.5%;
+}
+    .snsbx > h1 {
+        font-family: 'Maplestory Bold';
+        font-size: 4vw;
+        color: #fff;
+        padding: 21px;
+    }
+    article > a > .a_hover > p {
+    top: 27%;
+    font-size: 3.5vw;
+    line-height: 4vw;
+    }
+    .snsbx .snsbx_1 .snshoverbx {
+   display: none;
+}
+    .q3po {
+    padding: 13px 0;
+}
 }
