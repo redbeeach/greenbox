@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+#waper {
+    position: relative;
+    overflow: hidden;
+        width: 100%;
+    min-width: 1180px;
+}
+
+.background {
+    background: url(../imge/box_main_banner_PC-1.jpg)no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 50vh;
+}
+
+.background .backbx {
+    width: 1180px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 190px 0px;
+    line-height: 48px;
+}
+
+.background .backbx h2 {
+    font-size: 5vh;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.background .backbx span {
+    font-size: 2.5vh;
+
+}
+
+.side {
+    background: #eee;
+    width: 100%;
+    height: 50px;
+}
+
+.side .sidebx {
+    padding-left: 360px;
+    height: 50px;
+    padding-top: 13px;
+}
+
+.side .sidebx a {
+    font-size: 2.3vh;
+}
+
+section {
+    width: 1200px;
+    margin: 200px auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+section>span{
+        line-height: 5;
+    font-size: 2vh;
+}
+
+section > h2 {
+    font-size: 7vh;
+    font-weight: bold;
+}
+
+section > p {
+    font-size: 4vh;
+}
+.hotelbx{
+    min-width: 1180px;
+}
+.hotelbx ul {
+    margin-top: 100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hotelbx li {
+    width: 45%;
+    min-width: 500px;
+    display: inline-block;
+}
+
+.hotelbx img {
+    width: 526px;
+    border-radius: 20px;
+}
+
+.hotelbx a {
+    color: #000;
+    font-weight: bold;
+}
+
+.hotelbx em {
+    line-height: 2;
+font-size: 2.5vw;
+}
+
+.hotelbx span {
+    font-size: 1vw;
+        line-height: 3;
+}
+
+.grandbx{
+    background: #05775d40;
+    padding: 30px;
+}
+.grandbx h4{
+    font-size: 3vh;
+    font-weight: bold;
+    line-height: 2;
+}
+.grandbx span{
+    font-size: 2vh;
+    line-height: 30px;
+}
+.btn{
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.btn a{
+    display: block;
+    padding: 20px 20px;
+    background: #fff;
+    border-radius: 20px;
+    color: #008264;
+    font-weight: bold;
+    position: relative;
+    z-index: 99;
+}
+.btn a:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #008264a3;
+    transition: all .6s;
+    z-index: -1;
+}
+.btn a:hover:after{
+    width: 100%;
+    transition: all .6s;
+    border-radius: 20px;
+}
+.btn a:hover{
+    color: #fff;
+    transition: all .6s;
+}
+@media(max-width:1180px){
+    #waper{
+        min-width: auto;
+    }
+    section{
+        width: 100%;
+        min-width: auto;
+    }
+    .hotelbx{
+    min-width: auto;
+}
+    .hotelbx img {
+        width: 490px;
+    }
+    .side .sidebx {
+    padding-left: 100px;
+    }
+    .background .backbx {
+    padding: 250px 0px;
+        line-height: 1;
+}
+}
+@media (max-width:500px){
+    section>span {
+    line-height: 2;
+    font-size: 2vh;
+}
+    .background .backbx span {
+    font-size: 2vh;
+}
+    .background .backbx h2{
+        font-size: 4vh;
+    }
+    .side .sidebx {
+     padding-left: 0px; 
+}
+    .background .backbx {
+    padding: 95px 0px;
+    }
+}

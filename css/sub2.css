@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+}
+
+#waper {
+    position: relative;
+    overflow: hidden;
+        width: 100%;
+    min-width: 1180px;
+}
+
+.background {
+    background: url(../imge/collection_top-1.jpg)no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 50vh;
+}
+
+section {
+    width: 1200px;
+    margin: 200px auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.background .backbx {
+    width: 1180px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 250px 0px;
+}
+
+.background .backbx h2 {
+    font-size: 5vh;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.background .backbx span {
+    font-size: 2.5vh;
+
+}
+
+.side {
+    background: #eee;
+    width: 100%;
+    height: 50px;
+}
+
+.side .sidebx {
+    padding-left: 360px;
+    height: 50px;
+    padding-top: 13px;
+}
+
+.side .sidebx a {
+    font-size: 2.3vh;
+}
+
+.left {
+    width: 250px;
+    float: left;
+}
+
+.left > div > input {
+    display: block;
+}
+
+
+input[id*="answer"] {
+    display: none;
+}
+
+input[id*="answer"] + label {
+    display: block;
+    padding: 20px;
+    border: 1px solid #008264;
+    border-bottom: 0;
+    color: #fff;
+    font-weight: 900;
+    background: #008264;
+    cursor: pointer;
+    position: relative;
+}
+
+input[id*="answer"] + label em {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    display: inline-block;
+    background: url('../imge/arrow.png') 0 0 no-repeat;
+}
+
+input[id*="answer"] + label + div {
+    max-height: 0;
+    transition: all .35s;
+    overflow: hidden;
+    background: #ebf8ff;
+    font-size: 11px;
+}
+
+input[id*="answer"] + label + div p {
+    display: inline-block;
+    padding: 20px;
+}
+
+input[id*="answer"]:checked + label + div {
+    max-height: 100px;
+}
+
+input[id*="answer"]:checked + label em {
+    background-position: 0 -30px;
+}
+
+.check input {
+    display: none;
+}
+
+.check span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2vh;
+}
+
+.check {
+    display: block;
+    text-align: left;
+    padding: 8px;
+}
+
+.check .icon {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.check .icon::before,
+.check .icon::after {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 0;
+    background-color: #ff1100;
+    position: absolute;
+    transform-origin: left top;
+    border-radius: 5px;
+}
+
+.check .icon::before {
+    top: 8px;
+    left: 2px;
+    transform: rotate(-45deg);
+}
+
+.check .icon::after {
+    top: 16px;
+    left: 10px;
+    transform: rotate(-135deg);
+}
+
+.check input:checked ~ .icon {
+    border-color: #ff1100;
+}
+
+.check input:checked ~ .icon::before {
+    height: 10px;
+    transition: all .35s ease;
+}
+
+.check input:checked ~ .icon::after {
+    height: 24px;
+    transition: all .35s ease .35s;
+}
+
+.right {
+    max-height: 700px;
+    overflow-y: auto;
+}
+
+.right li {
+    position: relative;
+}
+
+.right li p {
+    padding: 10px;
+    color: #000;
+}
+
+.right img {
+    width: auto;
+    height: 11rem;
+    max-width: 100%;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.right li span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vh;
+    color: #000;
+    opacity: 0;
+    transition: all .7s;
+}
+
+.right img:hover {
+    opacity: .7;
+}
+
+.right li:hover span {
+    opacity: 1;
+    transition: all .7s;
+}
+
+.right li {
+    display: inline-block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 445px;
+}
+
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.close {
+    color: #fff;
+    font-size: 5vh;
+    cursor: pointer;
+}
+@media (max-width:1400px){
+        .right {
+    width: 67%;
+    }
+       #waper{
+        min-width: auto;
+    }
+}
+@media (max-width:768px) {
+
+    section {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .left {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .background .backbx {
+        width: 100%;
+        padding: 190px 0px;
+    }
+    .side .sidebx {
+     padding-left:0px;
+    }
+}

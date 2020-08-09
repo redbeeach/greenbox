@@ -99,8 +99,8 @@ h1,h2,h3,h4,h5,h6 {
 	font-family:"Raleway", sans-serif;
 }
 */
-.content_tt { font-size:30px; font-weight:600; color:#555; text-align:center;}
-.content_desc {font-size:16px; font-weight:300; color:#8c8c8c; width:65%; margin:23px auto 33px; text-align:center; }
+.content_tt { font-size:4vh; font-weight:600; color:#555; text-align:center;}
+.content_desc {    font-size: 21px; font-weight:300; color:#8c8c8c; width:65%; margin:23px auto 33px; text-align:center; }
 
 /* LAYOUT */
 .container { width:1170px; margin: 0 auto;}
@@ -120,8 +120,209 @@ h1,h2,h3,h4,h5,h6 {
 	position:relative;
 	box-shadow:inset 0 -3px #736357;
 }
+/* header */
+header {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    padding: 40px 0;
+    transition: 0.3s;
+}
+
+header .logo {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    float: left;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    line-height: 56px;
+    font-size: 17px;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    text-decoration: none;
+}
+
+header.sticky {
+    position: fixed;
+    padding: 7px 0;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+}
+
+header.sticky nav ul li a {
+    color: #fff;
+}
 
 
+.main-menu li {
+    margin-right: 29px;
+}
+
+.main-menu li:last-child {
+    margin-right: 60px;
+}
+
+.top-icons li {
+    margin-right: 25px;
+}
+
+.top-icons li:last-child {
+    margin-right: 0;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #008264;
+}
+
+header .logo a {
+    width: 171px;
+    height: 49px;
+    background: url(../imge/GREEN%20%20%20%20%20%20%20BOX.png) no-repeat;
+    background-size: contain;
+    display: block;
+    text-indent: -9999em;
+}
+
+header.sticky .logo a {
+    background-image: url(../imge/GREEN%20%20%20%20%20%20%20BOX.png);
+    background-size: 50%;
+}
+.toggle {
+    display: none;
+}
+/*footer*/
+/*footer*/
+#footerr{
+        width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#footer_sns{
+    position: relative;
+}
+.footer_sns {position: absolute; right: 17px;top: 100px; z-index: 1;}
+/*.footer_sns ul {background: url(../imge/icon.png)}*/
+.footer_sns li {display: inline-block; margin: 0 2px; background: url(../imge/icon.png)no-repeat;text-indent: -9999em;}
+.footer_sns li a {display: block; width: 36px; height: 36px;}
+.footer_sns li.a1 {background-position: 0 -375px;}
+.footer_sns li.a2 {background-position: -36px -375px;}
+.footer_sns li.a3 {background-position: -72px -375px;}
+.footer_sns li.a4 {background-position: -108px -375px;}
+.footer_sns li.a5 {background-position: -144px -375px;}
+.footer_sns li.s1:hover {background-position: 0 -411px;}
+.footer_sns li.s2:hover {background-position: -36px -411px;}
+.footer_sns li.s3:hover {background-position: -72px -411px;}
+.footer_sns li.s4:hover {background-position: -108px -411px;}
+.footer_sns li.s5:hover {background-position: -144px -411px;}
+.footer_sns .tel {text-align: right; padding-top: 5px;}
+.footer_sns .tel a {color: #8f8f8f; font-size: 21px; }
+.footer_sns .tel a em {color: #fff;}
+
+.footer_info {padding: 50px 0; width: 80%;}
+.footer_info h2 img {width: 87px;}
+.footer_info ul {padding: 15px 0;}
+.footer_info li {position: relative; display: inline; padding-right: 16px; white-space: nowrap;}
+.footer_info li:after {content: ''; position: absolute; right: 5px; top: 6px; width: 1px; height: 11px; background: #8f8f8f;}
+.footer_info li:last-child:after {width: 0; height: 0;}
+.footer_info li a {color: #8f8f8f;}
+.footer_info address p {color: #8f8f8f; padding-bottom: 15px;    line-height: 2;}
+
+
+/*반응형*/
+@media (max-width:1400px){
+        .container {
+        width: 100%;
+        margin: 0 auto;
+        min-width: auto;
+    }
+}
+@media (max-width: 960px){
+        header {
+        min-width: auto;
+    }
+    #footerr{width: 100%;}
+	.footer_sns {position: static; text-align: center; background: #008264; padding: 15px;}
+    .footer_sns .tel {display: none;}
+    .footer_info {width: 100%; text-align: center;}
+}
+@media screen and (max-width:768px) {
+     header {
+        position: static;
+        top: 0;
+        background: #fff;
+        padding: 20px 0 0;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, .3);
+    }
+
+    .toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        line-height: 56px;
+    }
+
+    header .container {
+        padding: 0;
+    }
+
+    header .logo a {
+        background-image: url(../imge/GREEN%20%20%20%20%20%20%20BOX33.png);
+    }
+
+    .top-icons li:last-child {
+        display: none;
+    }
+
+    .top-icons li a {
+        color: #555;
+    }
+
+    header nav {
+        float: none;
+        background: #111;
+        padding: 0 15px;
+    }
+
+    header nav ul {
+        float: none;
+    }
+
+    header .logo {
+        float: none;
+        padding-bottom: 20px;
+        margin-left: 15px;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .main-menu li {
+        float: none;
+        border-bottom: 1px solid #252525;
+    }
+
+    .top-icons {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    } 
+    
+}
 
 
 
