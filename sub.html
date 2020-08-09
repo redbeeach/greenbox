@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>greenbox</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub2.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <link rel="icon" type="image/png" sizes="16x16" href="imge/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="imge/favicon/apple-icon-57x57.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="imge/favicon/android-icon-192x192.png">
+    <meta name="description" content="Waxom free psd template" />
+    <meta name="keywords" content="free, psd, template, responsive" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <script>
+        $(function() {
+            $("#header").load("head.html");
+            $("#footer").load("footer1.html");
+        });
+    </script>
+    <script>
+        $(function() {
+
+
+            var modal = $("#myModal"); //팝업 div
+
+            var imgsUrl; //이미지 url
+
+            var altText; //이미지안 alt값 출력
+
+
+
+            $(".img-list li>a").on("click", function() { //클릭 이벤트
+
+                var _index = $(this).parent().index(); //해당 index 찾기
+
+                var _indexTar = $(".img-list li a").eq(_index); //해당 인덱스
+
+
+
+                $(".img-list li a").removeClass("open"); //"open" 클래스 삭제
+
+                _indexTar.addClass("open"); //"open" 클래스 추가
+
+
+
+                imgsUrl = _indexTar.find(".myImg").attr("src"); //이미지 경로에 src경로 찾기
+
+                altText = _indexTar.find(".myImg").attr("alt"); //이미지 경로에 alr값 찾기
+
+
+
+                modal.find(".modal-content").attr("src", imgsUrl); //해당 팝업 안에 이미지 넣기
+
+                modal.find(".modal-content").attr("id", ""); //팝업안 이미지 순서
+
+                modal.find(".modal-content").attr("id", "imgs_" + _index); //팝업안 이미지 순서 
+
+                modal.find(".caption").text(altText); // 팝업 텍스트 출력
+
+
+
+                modal.show(); //팝업 열기
+
+            })
+
+
+
+            $("span").on("click", function() {
+
+                modal.hide(); //팝업 닫기
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="waper">
+        <div class="background">
+            <div class="backbx">
+                <h2>2020 신상 SALE</h2>
+                <span>따끈따끈한 신제품 24종(~60%)</span>
+                <span>1만원 추가 할인 혜택까지!</span>
+            </div>
+        </div>
+        <div class="side">
+            <div class="sidebx">
+                <a><span><i class="fas fa-home"></i>home</span> > 상품전체보기</a>
+            </div>
+        </div>
+        <section>
+            <div class="left">
+                <input type="radio" name="accordion" id="answer01">
+                <label for="answer01">정렬<em></em></label>
+                <div>
+                    <label class="check">
+                        <input type="checkbox">
+                        <span class="icon"></span>
+                        <span class="text">추천순</span>
+                    </label>
+                    <label class="check">
+                        <input type="checkbox">
+                        <span class="icon"></span>
+                        <span class="text">최신 등록순</span>
+                    </label>
+                </div>
+                <input type="radio" name="accordion" id="answer02">
+                <label for="answer02">카테고리<em></em></label>
+                <div>
+                    <label class="check">
+                        <input type="checkbox">
+                        <span class="icon"></span>
+                        <span class="text">노즈워크</span>
+                    </label>
+                    <label class="check">
+                        <input type="checkbox">
+                        <span class="icon"></span>
+                        <span class="text">용품</span>
+                    </label>
+                </div>
+                <input type="radio" name="accordion" id="answer03">
+                <label for="answer03">건강케어<em></em></label>
+                <div>
+                    <label class="check">
+                        <input type="checkbox">
+                        <span class="icon"></span>
+                        <span class="text">관절/근육</span>
+                    </label>
+                    <label class="check">
+                        <input type="checkbox">
+                        <span class="icon"></span>
+                        <span class="text">눈</span>
+                    </label>
+                </div>
+                <input type="radio" name="accordion" id="answer04">
+                <label for="answer04">연령대<em></em></label>
+                <div>
+                    <label class="check">
+                        <input type="checkbox">
+                        <span class="icon"></span>
+                        <span class="text">자견</span>
+                    </label>
+                    <label class="check">
+                        <input type="checkbox">
+                        <span class="icon"></span>
+                        <span class="text">노견</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="right">
+                <ul class="img-list">
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub1.jpg" alt="" class="myImg">
+                            <p>황태 당근 큐브</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub2.jpg" alt="" class="myImg">
+                            <p>초미세모칫솔</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub3.jpg" alt="" class="myImg">
+                            <p>멍젤고구마맛</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub4.jpg" alt="" class="myImg">
+                            <p>모래성 장난감</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub5.jpg" alt="" class="myImg">
+                            <p>바베큐 세트</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub6.jpg" alt="" class="myImg">
+                            <p>고슴도치타올</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub7.jpg" alt="" class="myImg">
+                            <p>블루베리아이스</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub8.jpg" alt="" class="myImg">
+                            <p>아이스그릇</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub9.jpg" alt="" class="myImg">
+                            <p>네일그라인더</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub10.jpg" alt="" class="myImg">
+                            <p>드라이자켓</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub11.jpg" alt="" class="myImg">
+                            <p>페테라 밴드</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub12.jpg" alt="" class="myImg">
+                            <p>NO인식표</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub13.jpg" alt="" class="myImg">
+                            <p>풉백</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub14.jpg" alt="" class="myImg">
+                            <p>동결건조홍삼트릿</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub15.jpg" alt="" class="myImg">
+                            <p>카우스틱(S)</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub16.jpg" alt="" class="myImg">
+                            <p>소고기육포</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub17.jpg" alt="" class="myImg">
+                            <p>양념치킨</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub18.jpg" alt="" class="myImg">
+                            <p>김밥</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub19.jpg" alt="" class="myImg">
+                            <p>유리수반세트</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub20.jpg" alt="" class="myImg">
+                            <p>소간감자트릿</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub21.jpg" alt="" class="myImg">
+                            <p>단호박당근트릿</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub22.jpg" alt="" class="myImg">
+                            <p>피글렛 샤워가운</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub23.jpg" alt="" class="myImg">
+                            <p>먼지소탕작전</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub24.jpg" alt="" class="myImg">
+                            <p>반숙계란삑삑토이</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub25.jpg" alt="" class="myImg">
+                            <p>홍당무 나시티</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub26.jpg" alt="" class="myImg">
+                            <p>삑삑이치석제거</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub27.jpg" alt="" class="myImg">
+                            <p>올인원스파브러시</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub28.jpg" alt="" class="myImg">
+                            <p>소고기미역국밥</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub29.jpg" alt="" class="myImg">
+                            <p>돌로이지트릿백</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#myModal">
+                            <img src="imge/sub30.jpg" alt="" class="myImg">
+                            <p>흡수안전벨트</p>
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content">
+                <div class="caption"></div>
+            </div>
+
+        </section>
+    </div>
+    <div id="footer"></div>
+</body></html>
